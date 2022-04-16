@@ -77,7 +77,7 @@ def main():
     st.markdown("<h1 style='text-align: center; color: white;'>News Classifier ML App: Is Your News True or Fake?</h1>", unsafe_allow_html=True)
 
 
-    title_image = Image.open('fake_fact.jpeg')
+    title_image = Image.open('./fake_fact.jpeg')
     # jpeg Source: https://news.stanford.edu/2021/10/25/foil-fake-news-focus-infectiousness/
     # col1, col2, col3 = st.columns([0.2,5,0.2])
     # st.image(title_image, caption='Fake or Fact?', width = 250, use_column_width = 250)
