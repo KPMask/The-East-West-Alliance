@@ -1,5 +1,5 @@
 import os
-print(os.getcwd())
+import pickle
 import streamlit as st
 import joblib,os
 
@@ -139,8 +139,22 @@ def main():
                 #my models i made  --------------------------------------------
                 #vect_text = news_cv.transform([news_text]).toarray() #not needing to transform on it anymore after adding transformation to the pkl
                 #predictor = load_prediction_models("base.pkl")
-                predictor = load_prediction_models("final_models/retrain_gs_ct_mnb_np.pkl")
-                prediction = predictor.predict([news_text])
+
+                # predictor = load_prediction_models("final_models/retrain_gs_ct_mnb_np.pkl")
+                # prediction = predictor.predict([news_text])
+
+                with open("final_models/retrain_gs_ct_mnb_np.pkl", 'rb') as handle:
+                    data = handle.read()
+  # reconstructing the data as dictionary
+                predictor = pickle.loads(data)
+                predition = predictor.predict([news_text])
+
+
+
+
+
+
+
                 #st.write(prediction) #outputs our prediction number\
             #LOGISITC REGRESSION CHOICE
             elif model_choice == "LR":
