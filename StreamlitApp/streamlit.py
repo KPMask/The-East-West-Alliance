@@ -24,10 +24,12 @@ from wordcloud import WordCloud
 from PIL import Image
 
 ##libraries for preprocessing user input
+
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from bs4 import BeautifulSoup
 import nltk, string, re
+nltk.download('stopwords')
 stop=set(stopwords.words('english'))
 lemmatizer = nltk.stem.WordNetLemmatizer()
 wordTokenizer = nltk.tokenize.WhitespaceTokenizer()
