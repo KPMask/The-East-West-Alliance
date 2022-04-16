@@ -33,6 +33,7 @@ from bs4 import BeautifulSoup
 import nltk, string, re
 nltk.download('stopwords')
 nltk.download('wordnet')
+nltk.download('omw-1.4')
 stop=set(stopwords.words('english'))
 lemmatizer = nltk.stem.WordNetLemmatizer()
 wordTokenizer = nltk.tokenize.WhitespaceTokenizer()
