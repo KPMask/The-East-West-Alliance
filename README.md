@@ -122,11 +122,11 @@ The corpus size used to train and test on our models was about 77k+ which was ma
 |            KNN TVEC           |    90%    |    74%   |         66%        |
 |        Naive Bayes TVEC       |    79%    |    78%   |         69%        |
 
-After transforming our data through either count-vectorizer or IDF and grid-searching for the best hyperparameters on each model, SVC came out on top with the best testing score of 91% and had the best sensitivity score correctly identifying fake news 88% of the time. We believe this is due to the nature of SVC having proven to do very well with the hyperparameters of a degree of 2 with a radial basis function (RBF) kernel, thus it is our chosen best model. On the contrary, we found the worst performing model with the biggest variance difference between train and test was KNN at 16%. It also had the lowest sensitivity score of 66%. We believe this is because KNN is best suited for small datasets and our final dataset contained 77K rows. It was not able to accurately classify fake data were a mere accuracy score of 74%.
+After transforming our data through either count-vectorizer or IDF and grid-searching for the best hyperparameters on each model, SVC came out on top with the best testing score of 91% and had the best sensitivity score correctly identifying fake news 88% of the time. We believe this is due to the nature of SVC having proven to do very well with the hyperparameters of a degree of 2 with a radial basis function (RBF) kernel, thus it is our chosen best model. On the contrary, we found the worst performing model with the biggest variance difference between train and test was KNN at 16%. It also had the lowest sensitivity score of 66%. It was not able to accurately classify fake data were a mere accuracy score of 74%.
 
 
 ## Conclusions and Recommendations:
-In conclusion, we would want to go with SVC as our final model to classify news data. We want to go with SVC as not only does it have the highest accuracy score, but also the best sensitivity score of 88% where it will correctly identify fake news to be fake 88% of the time!  Our priority is to correctly capture fake news to minimize the harmful spread of misinformation and the SVC model's high sensitivity score allows for just that.
+In conclusion, we would want to go with SVC as our final model to classify news data. We want to go with SVC as not only does it have the highest accuracy score, but also the best sensitivity score of 88% where it will correctly identify fake news to be fake 88% of the time! Our priority is to correctly capture fake news to minimize the harmful spread of misinformation and the SVC model's high sensitivity score allows for just that.
 
 
 ## What's next? - Future study/research: <a id=1></a>
