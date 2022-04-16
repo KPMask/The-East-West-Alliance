@@ -41,8 +41,8 @@ Pew Research reported that over half of the respondents of the survey wished for
 ## Data Information:
 - **Rows** 44,898 (initial data) + 63,062 (additional data) = 107,960
 - **Final Rows** 77,838
-- **Columns**4 (initial)
--**Final Column** 1
+- **Initial Columns**: 4
+- **Final Column**: 1
 - **Model Type** Binary Classification
 - **Data Source**  
    - https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
