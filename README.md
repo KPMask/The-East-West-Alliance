@@ -98,7 +98,7 @@ The true words were similar to fake but the frequency of occurrence changed. “
 
 Our initial dataset contains data from 2015 to 2018, and the models performed very similar across the board with minimal differences in training, test, and sensitivity. Our top four models had near-perfect scores across the evaluation metrics chosen.
 
-![model_comparison_reran](./images/model_comparison_reran.PNG)
+![model_comparison_reran](./images/model_comparison_reran.png)
 
 To make our models more robust we found additional political data from 2007 to 2020 and reran our models. This had a great effect on the training, test, and sensitivity scores. Random forest had the biggest drop in sensitivity at 23% followed by a decision tree at 18%, logistic regression at 13%, and SVC at 11%. While all the models had test score drops ranging from 9-16%, SVC had a training score drop of 1% indicates the model is overfitting and will require future adjustments before deployment.
 
