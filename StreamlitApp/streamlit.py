@@ -63,7 +63,7 @@ def Preprocessing(text):
     text = re.sub(' +',' ',text)
     text = re.sub('[%s]' % re.escape(string.punctuation), ' ', text)
     text = re.sub(r'[^a-zA-Z\s]', ' ', str(text))
-    text = BeautifulSoup(text,  features="lxml").text
+    text = BeautifulSoup(text,  "html.parser").text
     text = re.sub('https?://\S+|www\.\S+', ' ', text)
     text = re.sub('<.*?>+', ' ', text)
     text = re.sub('\n', ' ', text)
