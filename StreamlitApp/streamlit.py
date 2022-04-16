@@ -139,32 +139,32 @@ def main():
                 #my models i made  --------------------------------------------
                 #vect_text = news_cv.transform([news_text]).toarray() #not needing to transform on it anymore after adding transformation to the pkl
                 #predictor = load_prediction_models("base.pkl")
-                predictor = load_prediction_models("./final_models/retrain_gs_ct_mnb_np.pkl")
+                predictor = load_prediction_models("final_models/retrain_gs_ct_mnb_np.pkl")
                 prediction = predictor.predict([news_text])
                 #st.write(prediction) #outputs our prediction number\
             #LOGISITC REGRESSION CHOICE
             elif model_choice == "LR":
-                predictor = load_prediction_models("./final_models/gs_cvec_idf_logregV3.pkl")
+                predictor = load_prediction_models("final_models/gs_cvec_idf_logregV3.pkl")
                 prediction = predictor.predict([news_text])
 
             #Decision Tree:
             elif model_choice == "DT":
-                predictor = load_prediction_models("./final_models/retrain_gs_ct_dt_np.pkl")
+                predictor = load_prediction_models("final_models/retrain_gs_ct_dt_np.pkl")
                 prediction = predictor.predict([news_text])
 
             #KNN
             elif model_choice == "KNN":
-                predictor = load_prediction_models("./final_models/retrain_gs_ct_knn_np.pkl")
+                predictor = load_prediction_models("final_models/retrain_gs_ct_knn_np.pkl")
                 prediction = predictor.predict([news_text])
 
             #RandomForestClassifier
             elif model_choice == "RFOREST":
-                predictor = load_prediction_models("./final_models/retrain_gs_random_forest.pkl")
+                predictor = load_prediction_models("final_models/retrain_gs_random_forest.pkl")
                 prediction = predictor.predict([news_text])
 
             #Support Vector Machine Classifier (SVC) --- Model V2
             elif model_choice == "SVC":
-                predictor = load_prediction_models("./final_models/gridsearchedSVCv2.pickle")
+                predictor = load_prediction_models("final_models/gridsearchedSVCv2.pickle")
                 prediction = predictor.predict([news_text])
 
 
