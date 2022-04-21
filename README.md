@@ -1,3 +1,11 @@
+## To run the streamlit app:
+Download the StreamlitApp folder.
+In your local terminal do:
+streamlit run streamlitLocal.py
+
+Make sure you have streamlit downloaded!
+
+
 ## By Team 1: The East-West Alliance
 Team Members: Nicolas Carreras, Leticia Genao, Kevin Peng, and Molovi Shuba
 
